@@ -336,6 +336,12 @@ return [
                 
             ],
             [
+                'text' => 'Groups Management', 
+                'url' => 'groups',
+                'icon' => 'fas fa-fw fa-user',
+                
+            ],
+            [
                 'text' => 'Members Management', 
                 'url' => 'members',
                 'icon' => 'fas fa-fw fa-user',
