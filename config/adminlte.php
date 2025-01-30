@@ -320,6 +320,7 @@ return [
                 'text' => 'Dashboard',
                 'url' => 'home',
                 'icon' => 'fas fa-fw fa-tachometer-alt',
+                
             ],
             [
                 'text' => 'Roles',
@@ -331,6 +332,7 @@ return [
                 'text' => 'Manage Users',
                 'url' => 'users',
                 'icon' => 'fas fa-fw fa-user',
+                
                 
             ],
             [
