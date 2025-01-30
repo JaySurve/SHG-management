@@ -1,0 +1,160 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(31, 32, 31, 0.286)
+}
+
+.container {
+    display: flex;
+    width: 50%;
+    height: 60vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.363); /* 3D Floating Effect */
+}
+
+/* 3D Border Effect */
+.container::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+/* Left Section */
+.left-section {
+    width: 50%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.left-section img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.left-section h1 {
+    color: #1e3a8a;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.left-section p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    background: #1e3a8a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.right-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 100%;
+    max-width: 300px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Soft border on inputs */
+    outline: none;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.options a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        background: #1e3a8a;
+    }
+    .container {
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+    .left-section, .right-section {
+        width: 100%;
+        padding: 20px;
+    }
+}
